@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AppNavbar from "./components/Navbar";
 import AppFooter from "./components/Footer";
+import AppHome from "./pages/Home";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/store"/>
             <Route path="/gaming"/>
           </Routes>
+          <AppHome />
         </main>
 
         <AppFooter />
