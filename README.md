@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# Dylan Everett — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website showcasing my projects, skills, and experiments in full-stack development, 
+UI/UX design, and interactive web applications. 
+The site will also include sections for gaming-related content and a demo 
+ecommerce storefront to demonstrate real-world application features.
 
-Currently, two official plugins are available:
+Live site: *(coming soon)*  
+Repo: https://github.com/Dylante5/portfolioWebsite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS + Flowbite React
+- **Language:** TypeScript
+- **Tooling:** ESLint, Prettier
+- **Deployment:** *(planned: AWS)*
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+This stack was chosen for:
+- fast development with Vite
+- utility-first styling with Tailwind
+- prebuilt, accessible UI components from Flowbite
+- scalability for future full-stack features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+- Portfolio & resume sections  
+- *(planned: Gaming section (setups, stats, experiments))*
+- *(planned: Demo ecommerce storefront to showcase UI and flow)*  
+- Responsive design with dark mode
+
+> More features will be added as the project evolves.
+
+---
+
+## Template Credit
+
+This template is based on the [Flowbite React](https://flowbite-react.com/) template.
+- Flowbite React Vite Template Repo: https://github.com/themesberg/flowbite-react-template-vite
+
+The template provided the base setup for:
+- Vite + React
+- Tailwind CSS
+- Flowbite React Components
+
+---
+
+## License
+Since this project is based on the Flowbite React Vite template, it is also licensed under the MIT License.
+[See the LICENSE file for details.](LICENSE)
+
+---
+
+## Author
+
+### Dylan Everett
+*Computer Science Major*
+- GitHub: https://github.com/Dylante5
+- LinkedIn: https://www.linkedin.com/in/dylaneverettolympia/
