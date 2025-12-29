@@ -3,7 +3,7 @@ import AppNavbar from "./components/Navbar";
 import AppFooter from "./components/Footer";
 import AppHome from "./pages/Home";
 import AppAbout from "./pages/About";
-import AppStorefront from "./pages/Storefront";
+import AppTemplates from "./pages/Templates.tsx";
 import AppGames from "./pages/Games";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<AppHome />} />
             <Route path="/about" element={<AppAbout />} />
-            <Route path="/storefront" element={<AppStorefront />} />
+            <Route path="/templates" element={<AppTemplates />} />
             <Route path="/games" element={<AppGames />} />
           </Routes>
         </main>
