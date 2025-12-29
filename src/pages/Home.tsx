@@ -1,9 +1,7 @@
-
-
 export default function AppHome() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="flex flex-col">
+      <h1 className="w-full text-center">Home</h1>
     </div>
   );
 }

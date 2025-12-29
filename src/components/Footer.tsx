@@ -4,7 +4,7 @@ import {
   Footer,
   FooterIcon,
 } from "flowbite-react";
-import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin  } from "react-icons/bs";
 
 export default function AppFooter() {
 return (
@@ -12,10 +12,9 @@ return (
     <div className="w-full">
       <div className="w-full sm:flex sm:items-center sm:justify-center">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-          <FooterIcon href="#" icon={BsFacebook} />
           <FooterIcon href="#" icon={BsInstagram} />
-          <FooterIcon href="#" icon={BsTwitter} />
-          <FooterIcon href="#" icon={BsGithub} />
+          <FooterIcon href="#" icon={BsLinkedin} />
+          <FooterIcon href="https://github.com/Dylante5" icon={BsGithub} />
         </div>
       </div>
     </div>

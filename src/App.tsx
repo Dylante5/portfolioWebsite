@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AppNavbar from "./components/Navbar";
 import AppFooter from "./components/Footer";
 import AppHome from "./pages/Home";
+import AppAbout from "./pages/About";
+import AppStorefront from "./pages/Storefront";
+import AppGames from "./pages/Games";
 
 function App() {
   return (
@@ -11,11 +14,11 @@ function App() {
 
         <main className="flex-1">
           <Routes>
-            <Route path="/"/>
-            <Route path="/store"/>
-            <Route path="/gaming"/>
+            <Route path="/" element={<AppHome />} />
+            <Route path="/about" element={<AppAbout />} />
+            <Route path="/storefront" element={<AppStorefront />} />
+            <Route path="/games" element={<AppGames />} />
           </Routes>
-          <AppHome />
         </main>
 
         <AppFooter />
