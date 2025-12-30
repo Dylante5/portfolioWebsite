@@ -65,10 +65,12 @@ export default function AppHome() {
     // canonical: "https://dylanteverett.com/", // TODO: Add canonical URL
   });
   return (
-    <div className="mx-auto w-full max-w-6xl space-y-10 my-12 md:my-6 px-6 md:px-0 ">
+    <div className="mx-auto w-full max-w-6xl md:max-w-7xl space-y-10 my-12 md:my-6 px-6 md:px-0 ">
       {/* HERO */}
-      <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)] md:p-10">
-        <div className="absolute inset-0 bg-[url('/pattern-light.svg')] dark:bg-[url('/pattern-dark.svg')] opacity-8 dark:opacity-10" />
+      <div className="pointer-events-none absolute -inset-6 bg-[url('/pattern-light.svg')]
+          dark:bg-[url('/pattern-dark.svg')] opacity-[0.06] dark:opacity-[0.1] w-full" />
+      <section className="relative overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))]
+          p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)] md:p-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="space-y-3">
             <Badge className="w-fit" color="gray">
@@ -119,7 +121,7 @@ export default function AppHome() {
       </section>
 
       {/* FEATURED SECTIONS */}
-      <section className="space-y-4">
+      <section className="relative overflow-hidden space-y-4">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-2xl font-bold">Explore</h2>
           <p className="text-sm opacity-90">Jump into the sections that matter.</p>
@@ -160,7 +162,7 @@ export default function AppHome() {
       </section>
 
       {/* TECH STACK */}
-      <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
+      <section className="relative overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
         <h2 className="text-2xl font-bold">Tech Stack</h2>
         <p className="mt-1 text-sm opacity-90">
           Tools I’m familiar with (and learning) as I grow as a developer.
@@ -176,7 +178,7 @@ export default function AppHome() {
       </section>
 
       {/* CTA FOOTER */}
-      <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
+      <section className="relative overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-semibold">Want the best stuff first?</h3>
