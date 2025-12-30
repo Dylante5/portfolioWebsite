@@ -65,9 +65,10 @@ export default function AppHome() {
     // canonical: "https://dylanteverett.com/", // TODO: Add canonical URL
   });
   return (
-    <div className="mx-auto w-full max-w-6xl space-y-10 my-12 md:my-6 px-6 md:px-0">
+    <div className="mx-auto w-full max-w-6xl space-y-10 my-12 md:my-6 px-6 md:px-0 ">
       {/* HERO */}
       <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)] md:p-10">
+        <div className="absolute inset-0 bg-[url('/pattern-light.svg')] dark:bg-[url('/pattern-dark.svg')] opacity-8 dark:opacity-10" />
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="space-y-3">
             <Badge className="w-fit" color="gray">
