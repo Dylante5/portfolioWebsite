@@ -13,7 +13,7 @@ return (
     <div className="w-full">
       <div className="w-full sm:flex sm:items-center sm:justify-center">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-          <FooterIcon href="#" icon={ TbBrandFiverr } />
+          <FooterIcon href="https://www.fiverr.com/s/WExW5BQ" icon={ TbBrandFiverr } />
           <FooterIcon href="https://www.linkedin.com/in/dylanteverett/" icon={BsLinkedin} />
           <FooterIcon href="https://github.com/Dylante5" icon={BsGithub} />
         </div>

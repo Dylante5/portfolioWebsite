@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { Badge, Button, Card } from "flowbite-react";
 import { HiArrowRight, HiCode, HiCollection, HiLightningBolt } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -37,18 +36,30 @@ const featured: FeaturedItem[] = [
 ];
 
 const tech = [
+    "TypeScript",
+    "JavaScript",
+    "PostgreSQL",
+    "SQL",
+    "Python",
+    "Java",
+    "C++",
+    "HTML",
+    "CSS",
     "React",
     "Vite",
-    "TypeScript",
     "Tailwind CSS",
     "Flowbite React",
-    "Node/Express (planned)",
-    "Postgres (planned)",
+    "Node/Express",
+    "Django",
+    "Flask",
+    "PyQT",
+    "Tkinter",
+    "CustomTkinter",
 ];
 
 export default function AppHome() {
   return (
-    <div className="mx-auto w-full max-w-6xl space-y-10 m-6">
+    <div className="mx-auto w-full max-w-6xl space-y-10 my-12 md:my-6 px-6 md:px-0">
       {/* HERO */}
       <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)] md:p-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
@@ -93,7 +104,7 @@ export default function AppHome() {
             </div>
             <div className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg))] p-4
             shadow-sm transition-shadow hover:shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
-              <div className="text-sm opacity-70">Stack</div>
+              <div className="text-sm opacity-70">Portfolio Stack</div>
               <div className="text-lg font-semibold">React • Vite • Tailwind • Flowbite</div>
             </div>
           </div>
@@ -145,7 +156,7 @@ export default function AppHome() {
       <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
         <h2 className="text-2xl font-bold">Tech Stack</h2>
         <p className="mt-1 text-sm opacity-70">
-          Tools I’m using (and expanding) on this portfolio as it grows.
+          Tools I’m familiar with (and learning) as I grow as a developer.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2">
