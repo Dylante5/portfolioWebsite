@@ -1,6 +1,6 @@
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Button } from "flowbite-react";
 import { useEffect, useState } from "react";
-import { BsLightbulb, BsLightbulbFill } from "react-icons/bs";
+import { HiOutlineLightBulb, HiLightBulb } from "react-icons/hi";
 import useTheme from "../hooks/useTheme.tsx";
 import Icon from "/public/icon.svg?react";
 
@@ -27,7 +27,7 @@ export default function AppNavbar() {
             }
         `}>
             <NavbarBrand href="/">
-                <Icon className="h-6 w-6 text-gray-900 dark:text-slate-400" />
+                <Icon className="h-8 w-8 text-gray-900 dark:text-slate-500" />
                 <span className="brand-text self-center whitespace-nowrap text-xl font-semibold">Dylan Everett</span>
             </NavbarBrand>
             <NavbarToggle />
@@ -37,11 +37,12 @@ export default function AppNavbar() {
                     size="xs"
                     onClick={toggleTheme}
                     aria-label="Toggle theme"
+                    className="active:shadow-md active:outline-none dark:active:bg-black"
                 >
                     {theme === "light" ? (
-                        <BsLightbulb className="" />
+                        <HiOutlineLightBulb className="h-4 w-4" />
                     ) : (
-                        <BsLightbulbFill className="" />
+                        <HiLightBulb className="h-4 w-4" />
                     )}
                 </Button>
                 <NavbarLink href="/">Home</NavbarLink>

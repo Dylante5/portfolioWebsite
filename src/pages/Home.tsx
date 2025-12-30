@@ -2,6 +2,7 @@ import { Badge, Button, Card } from "flowbite-react";
 import { HiArrowRight, HiCode, HiCollection, HiLightningBolt } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { JSX } from "react";
+import useDocumentMeta from "../hooks/useDocumentMeta";
 
 type FeaturedItem = {
   title: string;
@@ -58,6 +59,11 @@ const tech = [
 ];
 
 export default function AppHome() {
+  useDocumentMeta({
+    title: "Home | Dylan Everett",
+    description: "Portfolio Homepage: descriptions, games, and templates.",
+    // canonical: "https://dylanteverett.com/", // TODO: Add canonical URL
+  });
   return (
     <div className="mx-auto w-full max-w-6xl space-y-10 my-12 md:my-6 px-6 md:px-0">
       {/* HERO */}
@@ -94,17 +100,17 @@ export default function AppHome() {
           <div className="grid w-full gap-3 md:max-w-sm">
             <div className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg))] p-4
             shadow-sm transition-shadow hover:shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
-              <div className="text-sm opacity-70">Focus</div>
+              <div className="text-sm opacity-90">Focus</div>
               <div className="text-lg font-semibold">UI Systems + Full-stack Demos</div>
             </div>
             <div className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg))] p-4
             shadow-sm transition-shadow hover:shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
-              <div className="text-sm opacity-70">Currently</div>
+              <div className="text-sm opacity-90">Currently</div>
               <div className="text-lg font-semibold">Building Templates + Storefront</div>
             </div>
             <div className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg))] p-4
             shadow-sm transition-shadow hover:shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
-              <div className="text-sm opacity-70">Portfolio Stack</div>
+              <div className="text-sm opacity-90">Portfolio Stack</div>
               <div className="text-lg font-semibold">React • Vite • Tailwind • Flowbite</div>
             </div>
           </div>
@@ -115,7 +121,7 @@ export default function AppHome() {
       <section className="space-y-4">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-2xl font-bold">Explore</h2>
-          <p className="text-sm opacity-70">Jump into the sections that matter.</p>
+          <p className="text-sm opacity-90">Jump into the sections that matter.</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
@@ -130,7 +136,7 @@ export default function AppHome() {
                     <span className="opacity-90">{item.icon}</span>
                     {item.title}
                   </div>
-                  <p className="text-sm opacity-80">{item.description}</p>
+                  <p className="text-sm opacity-90">{item.description}</p>
                 </div>
               </div>
 
@@ -155,7 +161,7 @@ export default function AppHome() {
       {/* TECH STACK */}
       <section className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
         <h2 className="text-2xl font-bold">Tech Stack</h2>
-        <p className="mt-1 text-sm opacity-70">
+        <p className="mt-1 text-sm opacity-90">
           Tools I’m familiar with (and learning) as I grow as a developer.
         </p>
 
@@ -173,7 +179,7 @@ export default function AppHome() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-semibold">Want the best stuff first?</h3>
-            <p className="text-sm opacity-70">
+            <p className="text-sm opacity-90">
               Check out the Templates I have available, or Games for interactive builds I have worked on.
             </p>
           </div>
