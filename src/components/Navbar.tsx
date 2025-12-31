@@ -1,5 +1,6 @@
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Button } from "flowbite-react";
+import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle, Button } from "flowbite-react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { HiOutlineLightBulb, HiLightBulb } from "react-icons/hi";
 import useTheme from "../hooks/useTheme.tsx";
 import Icon from "/public/icon.svg?react";
@@ -16,6 +17,14 @@ export default function AppNavbar() {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
+
+        const navItem = ({ isActive }: { isActive: boolean }) =>
+          [
+            "px-3 py-2 rounded-lg text-sm font-medium transition-colors",
+            isActive
+              ? "text-[rgb(var(--text-color))]"
+              : "text-[rgb(var(--fg))] hover:text-[rgb(var(--hover-color))]",
+          ].join(" ");
 
     return (
         <Navbar fluid className={`fb-navbar sticky top-0 z-50 transition-all duration-300
@@ -45,10 +54,10 @@ export default function AppNavbar() {
                         <HiLightBulb className="h-4 w-4" />
                     )}
                 </Button>
-                <NavbarLink href="/">Home</NavbarLink>
-                <NavbarLink href="/about">About</NavbarLink>
-                <NavbarLink href="/games">Games</NavbarLink>
-                <NavbarLink href="/templates">Templates</NavbarLink>
+                <NavLink to="/" end className={navItem}>Home</NavLink>
+                <NavLink to="/about" className={navItem}>About</NavLink>
+                <NavLink to="/games" className={navItem}>Games</NavLink>
+                <NavLink to="/templates" className={navItem}>Templates</NavLink>
             </NavbarCollapse>
         </Navbar>
     );

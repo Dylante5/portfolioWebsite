@@ -56,7 +56,7 @@ export default function AppAbout() {
                         <div className="flex justify-center">
                             <div className="inline-flex rounded-full p-0.75 bg-linear-to-br from-[rgb(var(--text-color))] to-lime-800 md:to-lime-400
                                 shadow-md dark:shadow-[0_0_18px_rgba(16,185,129,0.8)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg">
-                                <Avatar rounded img="/public/face.jpg" size="xl" className="object-cover contrast-110 saturate-110"/>
+                                <Avatar rounded img="/face.jpg" size="xl" className="object-cover contrast-110 saturate-110"/>
                             </div>
                         </div>
                         <p className="w-full text-center text-lg"><strong>Software Engineer focused on modern UI and full-stack development.</strong></p>
