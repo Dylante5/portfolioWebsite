@@ -36,28 +36,6 @@ const featured: FeaturedItem[] = [
   },
 ];
 
-const tech = [
-    "TypeScript",
-    "JavaScript",
-    "PostgreSQL",
-    "SQL",
-    "Python",
-    "Java",
-    "C++",
-    "HTML",
-    "CSS",
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "Flowbite React",
-    "Node/Express",
-    "Django",
-    "Flask",
-    "PyQT",
-    "Tkinter",
-    "CustomTkinter",
-];
-
 export default function AppHome() {
   useDocumentMeta({
     title: "Home | Dylan Everett",
@@ -121,7 +99,7 @@ export default function AppHome() {
       </section>
 
       {/* FEATURED SECTIONS */}
-      <section className="relative overflow-hidden space-y-4">
+      <section className="relative space-y-4">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-2xl font-bold">Explore</h2>
           <p className="text-sm opacity-90">Jump into the sections that matter.</p>
@@ -131,7 +109,8 @@ export default function AppHome() {
           {featured.map((item) => (
             <Card
               key={item.title}
-              className="border-[rgb(var(--border))] bg-[rgb(var(--card))] shadow-sm transition-shadow hover:shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.1)]"
+              className="relative overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))]
+                shadow-md hover:shadow-lg dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="space-y-2">
@@ -157,22 +136,6 @@ export default function AppHome() {
                 </Button>
               </div>
             </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* TECH STACK */}
-      <section className="relative overflow-hidden rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] p-6 shadow-md dark:shadow-[0_0_12px_rgba(255,255,255,0.2)]">
-        <h2 className="text-2xl font-bold">Tech Stack</h2>
-        <p className="mt-1 text-sm opacity-90">
-          Tools I’m familiar with (and learning) as I grow as a developer.
-        </p>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tech.map((t) => (
-            <Badge key={t} color="gray">
-              {t}
-            </Badge>
           ))}
         </div>
       </section>

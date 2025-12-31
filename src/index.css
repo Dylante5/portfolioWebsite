@@ -13,6 +13,11 @@
         --border: 229 231 235;
         --text-color: 0 120 20;
         --hover-color: 0 60 0;
+
+        --secondary: 16 185 129;
+        --secondary-foreground: 6 95 70;
+        --secondary-soft: 209 250 229;
+
     }
 
     .dark {
@@ -21,13 +26,21 @@
         --fg: 226 232 240;
         --card: 15 23 42;
         --border: 51 65 85;
-        --text-color: 60 180 80;
+        --text-color: 40 140 40;
         --hover-color: 0 120 20;
+
+        --secondary: 52 211 153;
+        --secondary-foreground: 209 250 229;
+        --secondary-soft: 6 78 59;
     }
 
     body {
         background-color: rgb(var(--bg));
-        color: rgb(var(--text-color));
+        color: rgb(var(--fg));
+    }
+
+    div, p, h1, h2, h3, h4, h5, h6 {
+        color: rgb(var(--text-color)) !important;
     }
 
     body,

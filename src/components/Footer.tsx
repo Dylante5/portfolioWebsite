@@ -9,7 +9,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 export default function AppFooter() {
 return (
-  <Footer container className="rounded-none shadow-[0_-1px_6px_rgba(0,0,0,0.2)] dark:shadow-[0_-1px_12px_rgba(255,255,255,0.2)]">
+  <Footer container className="relative overflow-hidden rounded-none shadow-[0_-1px_6px_rgba(0,0,0,0.2)] dark:shadow-[0_-1px_12px_rgba(255,255,255,0.2)]">
     <div className="w-full">
       <div className="w-full sm:flex sm:items-center sm:justify-center">
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
